@@ -1,0 +1,85 @@
+body {
+    background-color: antiquewhite;
+    min-height: 100vh;
+    margin: 20px auto;
+    max-width: 700px;
+    font-family: Cambria, Cochin, Georgia, "Times New Roman", serif;
+    color: maroon;
+}
+
+h1 {
+    text-align: center;
+    background: linear-gradient(to bottom, goldenrod, chocolate);
+    padding: 20px 0;
+    color: white;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 0;
+}
+
+table {
+    border: 1px solid brown !important;
+    background-color: #fffefb;
+    margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+td {
+    border: 1px solid burlywood;
+    padding: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    border: 1px solid brown;
+    border-radius: 3px;
+    padding: 4px;
+    font-family: Cambria, Cochin, Georgia, serif;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+}
+
+select {
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: chocolate;
+}
+
+input[type="file"] {
+    max-width: 100%;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    margin: 10px auto 0;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: chocolate;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: maroon;
+    transform: scale(1.05);
+}

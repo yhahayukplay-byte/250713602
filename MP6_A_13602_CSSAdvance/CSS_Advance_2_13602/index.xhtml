@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Seminar</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <h1>Formulir Pendaftaran Seminar</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <h2>Data Peserta</h2>
+
+        <table cellspacing="4" cellpadding="4" border="1"
+               style="border-collapse: collapse; width: 100%;">
+            <tr>
+                <td style="width:32%; font-weight:bold;">Nama Lengkap</td>
+                <td>
+                    <input type="text" name="nama_lengkap" />
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:32%; font-weight:bold;">NIM</td>
+                <td>
+                    <input type="text" name="nim" />
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:32%; font-weight:bold;">Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="Laki-laki" />
+                    Laki-laki
+
+                    <input type="radio" name="jenis_kelamin" value="Perempuan" />
+                    Perempuan
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:32%; font-weight:bold;">Program Studi</td>
+                <td>
+                    <select name="program_studi">
+                        <option value="Informatika">Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                        <option value="Manajemen">Manajemen</option>
+                        <option value="Akuntansi">Akuntansi</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Pilihan Seminar</h2>
+
+        <table cellspacing="4" cellpadding="4" border="1"
+               style="border-collapse: collapse; width: 100%;">
+            <tr>
+                <td style="width:32%; font-weight:bold;">Jenis Tiket</td>
+                <td>
+                    <input type="radio" name="jenis_tiket" value="Reguler" />
+                    Reguler
+
+                    <input type="radio" name="jenis_tiket" value="VIP" />
+                    VIP
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:32%; font-weight:bold;">Topik Seminar</td>
+                <td>
+                    <input type="checkbox" name="topik_seminar" value="Web Development" />
+                    Web Development
+                    <br />
+
+                    <input type="checkbox" name="topik_seminar" value="Data Science" />
+                    Data Science
+                    <br />
+
+                    <input type="checkbox" name="topik_seminar" value="Artificial Intelligence" />
+                    Artificial Intelligence
+                </td>
+            </tr>
+        </table>
+
+        <h2>Informasi Tambahan</h2>
+
+        <table cellspacing="4" cellpadding="4" border="1"
+               style="border-collapse: collapse; width: 100%;">
+            <tr>
+                <td style="width:32%; font-weight:bold;">
+                    Alasan Mengikuti Seminar
+                </td>
+                <td>
+                    <textarea name="alasan" rows="5" cols="20"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:32%; font-weight:bold;">Bukti Pembayaran</td>
+                <td>
+                    <input type="file" name="bukti_pembayaran" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Simpan" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
